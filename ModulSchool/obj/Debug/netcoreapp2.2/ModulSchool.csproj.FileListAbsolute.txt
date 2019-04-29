@@ -1,0 +1,13 @@
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\bin\Debug\netcoreapp2.2\ModulSchool.deps.json
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\bin\Debug\netcoreapp2.2\ModulSchool.runtimeconfig.json
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\bin\Debug\netcoreapp2.2\ModulSchool.runtimeconfig.dev.json
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\bin\Debug\netcoreapp2.2\ModulSchool.dll
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\bin\Debug\netcoreapp2.2\ModulSchool.pdb
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\obj\Debug\netcoreapp2.2\ModulSchool.csproj.CoreCompileInputs.cache
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\obj\Debug\netcoreapp2.2\ModulSchool.RazorAssemblyInfo.cache
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\obj\Debug\netcoreapp2.2\ModulSchool.RazorAssemblyInfo.cs
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\obj\Debug\netcoreapp2.2\ModulSchool.AssemblyInfoInputs.cache
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\obj\Debug\netcoreapp2.2\ModulSchool.AssemblyInfo.cs
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\obj\Debug\netcoreapp2.2\ModulSchool.RazorTargetAssemblyInfo.cache
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\obj\Debug\netcoreapp2.2\ModulSchool.dll
+C:\Users\nurim\source\repos\ModulSchool\ModulSchool\obj\Debug\netcoreapp2.2\ModulSchool.pdb
