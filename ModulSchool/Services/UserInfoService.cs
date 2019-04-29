@@ -6,6 +6,7 @@ using Dapper;
 using ModulSchool.Models;
 using ModulSchool.Services.Interfaces;
 using Npgsql;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ModulSchool.Services
 {
@@ -21,7 +22,7 @@ namespace ModulSchool.Services
             }
         }
 
-        public async void AppendUserPost(User user)
+        public async Task<IActionResult> AppendUserPost(User user)
         {
             using (var connection = new NpgsqlConnection(ConnectionString))
             {
@@ -29,6 +30,7 @@ namespace ModulSchool.Services
 
                 await connection.ExecuteAsync(query, user);
             }
+            return new OkResult();
         }
         //public async Task<User> GetById(Guid id)
         //{

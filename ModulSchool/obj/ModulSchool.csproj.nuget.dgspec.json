@@ -45,6 +45,10 @@
               "target": "Package",
               "version": "[1.60.6, )"
             },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.2, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 //using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModulSchool.BusinessLogic;
+using ModulSchool.Commands;
 using ModulSchool.Models;
 
 namespace ModulSchool.Controllers
@@ -37,7 +38,9 @@ namespace ModulSchool.Controllers
         {
             Guid guid = Guid.NewGuid();
             user.Id = guid;
-            _appendUsersRequestHandler.AppendUserHandle(user);
+            //_appendUsersRequestHandler.AppendUserHandle(user);
+            _appendUsersRequestHandler.Handle(user);
+
             return Task.FromResult<User>(user);
         }
 

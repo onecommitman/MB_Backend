@@ -1,25 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using ModulSchool.Models;
 using ModulSchool.Services.Interfaces;
+using MassTransit;
+using ModulSchool.Commands;
 
 namespace ModulSchool.BusinessLogic
 {
     public class AppendUsersRequestHandler
     {
-        public AppendUsersRequestHandler(IUserInfoService userInfoService)
+        private readonly IBus _bus;
+
+        public AppendUsersRequestHandler(IBus bus)
         {
-            _userInfoService = userInfoService;
+            _bus = bus;
         }
-        private IUserInfoService _userInfoService;
-        public void AppendUserHandle(User user)
+
+        public Task<User> Handle(User user)
         {
-            //Guid guid = Guid.NewGuid();
-            //user.Id = guid;
-            _userInfoService.AppendUserPost(user);
-            //return Task.FromResult<User>(user);
+            Guid guid = Guid.NewGuid();
+            user.Id = guid;
+
+            // было так: _userInfoService.AppendUser(user);
+            _bus.Send(new AppendUserCommand()
+            {
+                User = user
+            });
+
+            return Task.FromResult<User>(user);
         }
     }
 }

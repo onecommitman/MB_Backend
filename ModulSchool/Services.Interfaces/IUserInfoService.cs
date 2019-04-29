@@ -3,6 +3,7 @@
 //using System.Linq;
 using System.Threading.Tasks;
 using ModulSchool.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ModulSchool.Services.Interfaces
 {
@@ -10,7 +11,7 @@ namespace ModulSchool.Services.Interfaces
     {
         Task<User> GetById(Guid id);
 
-        void AppendUserPost(User user);
+        Task<IActionResult> AppendUserPost(User user);
     }
     
 }
